@@ -24,9 +24,11 @@ export function Movies({configuration}) {
   }
 
   const handleCloseModal = () => {
-    setModalMovie({})
-    disableScroll.off()
     setModalOpened(false)
+    setTimeout(() => {
+      setModalMovie({})
+      disableScroll.off()
+    }, 100)
   }
 
   useEffect(() => {
