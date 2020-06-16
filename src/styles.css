@@ -1,0 +1,103 @@
+html {
+  font-family: 'Lato';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: #111111;
+  color: #f0f0f0;
+  padding: 100px 0 100px;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie {
+  margin: 20px 20px 25px 20px;
+}
+
+.movie__poster {
+  height: 513px;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: 0;
+  box-shadow: 0px 5px 60px 15px rgba(221,91,27,0.05);
+  transition: transform 0.3s;
+}
+
+.movie__poster:hover, .movie__poster--scaled {
+  transform: scale(1.02) translate(0,-7px);
+}
+
+.movie__desc {
+  text-overflow: hidden;
+  width: 342px;
+  height: 120px;
+  position: relative;
+}
+
+.movie__title {
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+.movie__desc .movie__mark-votes {
+  position: absolute;
+  bottom: 0;
+  line-height: 1;
+}
+
+.movie__votes {
+  font-size: 10px;
+  color: #707070;
+}
+
+.movie__mark {
+  font-weight: bold;
+}
+
+.movie__genres {
+  font-weight: 600;
+  color: #a0a0a0;
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.movie__overview {
+  color: #bbb;
+  font-size: 17px;
+}
+
+.movie__release-date {
+  font-size: 13px;
+  color: #bbb;
+}
+
+/* Modal */
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal__desc {
+  padding: 20px;
+  position: relative;
+}
+
+.modal__img {
+}
