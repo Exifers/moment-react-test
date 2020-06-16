@@ -28,7 +28,7 @@ export function Movies({configuration}) {
     setTimeout(() => {
       setModalMovie({})
       disableScroll.off()
-    }, 100)
+    }, 500)
   }
 
   useEffect(() => {

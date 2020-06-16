@@ -27,7 +27,7 @@ const modalStyles = {
 function MovieModal({movie, genres, imageSrc, ...props}) {
   return (
     <Modal
-      closeTimeoutMS={100}
+      closeTimeoutMS={500}
       style={modalStyles}
       {...props}
       >

@@ -64,7 +64,7 @@ export const withConfiguration = (WrappedComponent) => {
     }, [])
 
     if (loading) {
-      return <div>Loading...</div>
+      return null 
     }
 
     return (
